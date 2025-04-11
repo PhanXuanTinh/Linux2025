@@ -15,13 +15,13 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    if(numBytes <= 0)
+    if (numBytes <= 0)
     {
         printf("num-bytes must be a positive integer\n");
         return 1;
     }
 
-    if(mode == 'r')
+    if (mode == 'r')
     {
         int fd = open(fileName, O_RDONLY);
         if(fd == -1)
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
         }
 
         char *buffer = malloc(numBytes + 1);
-        if(!buffer)
+        if (!buffer)
         {
             perror("Buffer alloc faled");
             close(fd);
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
 
         size_t bytesRead = read(fd, buffer, numBytes);
-        if(bytesRead == -1)
+        if (bytesRead == -1)
         {
             perror("Read failed!!!");
             close(fd);
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
         free(buffer);
         close(fd);
     }
-    else if(mode = 'w')
+    else if (mode = 'w')
     {
         int fd = open(fileName, O_WRONLY | O_CREAT | O_TRUNC, 0777);
         if(fd == -1)
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
         }
         size_t bytesToWrite = (numBytes < strlen(data)) ? numBytes : strlen(data);
         size_t bytesWrite = write(fd, data, bytesToWrite);
-        if(bytesWrite == -1)
+        if (bytesWrite == -1)
         {
             perror("Read failed!!!");
             close(fd);

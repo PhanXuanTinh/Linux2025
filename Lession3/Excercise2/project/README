@@ -1,0 +1,11 @@
+I used execl() but this error appeared:
+
+Run with environment variable = 1
+ACTION=1 ./BUILD/app
+execl failed
+: No such file or directory
+<Parent process> The child process end
+
+How to fix:
+- Option 1: Use execlp() instead of execl()
+- Option 2: Use absolute path: /bin/ls

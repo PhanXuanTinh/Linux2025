@@ -9,3 +9,14 @@ execl failed
 How to fix:
 - Option 1: Use execlp() instead of execl()
 - Option 2: Use absolute path: /bin/ls
+
+==================================================
+exec() does not create a new process.
+
+It replaces the entire content of the current program.
+
+The PID remains unchanged.
+
+If exec succeeds → the code after exec is never executed.
+
+If exec fails → the program continues executing the code after exec.

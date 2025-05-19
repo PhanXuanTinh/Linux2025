@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -std=c99 -pthread
-SRC = src/main.c
+SRC = src/main.c src/util.c
 OUT = chatApp
 BUILD_DIR = BUILD
 

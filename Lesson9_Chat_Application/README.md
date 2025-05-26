@@ -1,10 +1,10 @@
-#Chat Application
+# Chat Application
 
 Chương trình dòng lệnh chat P2P
 
 ---
 
-##1. Requirement Tính Năng (Functional Requirements)
+## 1. Requirement Tính Năng (Functional Requirements)
 
 - Giao diện dòng lệnh (Command Line Interface - CLI):
   * Ứng dụng phải hoạt động qua giao diện dòng lệnh và cung cấp các lệnh như help, myip, myport, connect, list, terminate, send, và exit.
@@ -34,7 +34,7 @@ Chương trình dòng lệnh chat P2P
   * exit: Đóng tất cả các kết nối hiện tại và thoát chương trình.
   * Các peer khác cần cập nhật danh sách kết nối để loại bỏ peer vừa thoát.
  
-##2. Requirement Phi Tính Năng (Non-Functional Requirements)
+## 2. Requirement Phi Tính Năng (Non-Functional Requirements)
 
 - Hiệu năng:
   * Ứng dụng phải xử lý nhiều kết nối đồng thời (multi-threading hoặc asynchronous I/O).

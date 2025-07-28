@@ -1,0 +1,1 @@
+cmd_/home/tinhcot/Documents/Linux2025/Lesson12_Kernel_Module_Character_DD/src/mgpio/Module.symvers := sed 's/\.ko$$/\.o/' /home/tinhcot/Documents/Linux2025/Lesson12_Kernel_Module_Character_DD/src/mgpio/modules.order | scripts/mod/modpost -m -a  -o /home/tinhcot/Documents/Linux2025/Lesson12_Kernel_Module_Character_DD/src/mgpio/Module.symvers -e -i Module.symvers   -T -

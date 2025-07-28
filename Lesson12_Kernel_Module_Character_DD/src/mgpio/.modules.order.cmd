@@ -1,0 +1,1 @@
+cmd_/home/tinhcot/Documents/Linux2025/Lesson12_Kernel_Module_Character_DD/src/mgpio/modules.order := {   echo /home/tinhcot/Documents/Linux2025/Lesson12_Kernel_Module_Character_DD/src/mgpio/mgpio.ko; :; } | awk '!x[$$0]++' - > /home/tinhcot/Documents/Linux2025/Lesson12_Kernel_Module_Character_DD/src/mgpio/modules.order
